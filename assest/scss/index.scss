@@ -1,0 +1,138 @@
+@import 'base.scss';
+
+* {
+    box-sizing: inherit;
+}
+
+a {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: $primary-color;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: $secondry-font
+}
+
+
+html {
+    font-size: 62.5%;
+    line-height: 1.7rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.6rem;
+    line-height: 4rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: $text-color;
+    font-family: $secondry-font;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-transform: capitalize;
+    font-family: $secondry-font;
+    color: $text-color;
+    line-height: 3rem;
+}
+h3 {
+    font-family: $secondry-font;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: $white-color;
+}
+
+h4 {
+  color: $text-color;
+  font-family: $secondry-font;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  color: $primary-color;
+  text-transform: capitalize;
+  font-family: $secondry-font;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.3rem;
+  color: $text-color;
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 1px;
+  margin: 2px 0;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+span {
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  color: $text-color;
+}
+.btn {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    text-transform: inherit;
+    width: 100%;
+    transition: all 0.3s
+}
+.btn-primary {
+  color: $primary-color;
+}
+.btn-green {
+    border: 1px solid $green-color;
+    background-color: $green-color;
+    color: #ffffff
+}
+.btn-yellow {
+    border: 1px solid $yellow-color;
+    background-color: $yellow-color;
+    color: $font-color;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+.text-center {
+  text-align: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+#tabs_bar_adver {
+  position: fixed;
+  z-index: 12;
+  top: 50%;
+  right: -128px;
+  transform: rotate(90deg)
+}
+.tabs_bar_adver {
+  background-color: #000;
+  padding: 10px 20px;
+  p {
+    font-size: 2.2rem;
+    color: #fff;
+
+  }
+}

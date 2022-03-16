@@ -1,0 +1,108 @@
+#section_5 {
+  margin: 60px 0;
+}
+
+.wook_title h1 {
+  font-size: 3.6rem;
+  font-weight: normal;
+}
+
+.wook_title p {
+  font-size: 1.6rem;
+  line-height: 3.4rem;
+}
+
+.wook_title h5 {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.wook_title span {
+  font-size: 1.6rem;
+  color: #E29856;
+}
+
+.work_wook_card {
+  position: relative;
+  cursor: pointer;
+}
+
+.work_wook_card.active img {
+  border: 2px solid #A76E65;
+  border-radius: 10px;
+}
+
+.work_wook_card.active::after {
+  content: '';
+  position: absolute;
+  bottom: -22px;
+  left: 32%;
+  border-width: 20px 26px;
+  border-style: solid;
+  border-color: transparent transparent #F5EBE0 transparent;
+}
+
+.work_wook_card img {
+  border: 2px solid transparent;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.work_wook_card span {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.6rem;
+  display: block;
+}
+
+.work_wook_tabs_content {
+  margin-top: 20px;
+}
+
+.work_wook_tabs_content .work_wook_tab {
+  background-image: url("../images/work_wook/tabs-content.webp");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 500px auto;
+  border-radius: 24px;
+  padding: 30px 40px;
+  background-color: #F5EBE0;
+}
+
+.work_wook_tabs_content .work_wook_tab_wrapper {
+  display: none;
+}
+
+.work_wook_tabs_content .work_wook_tab_wrapper:first-child {
+  display: flex;
+}
+
+.work_wook_tabs_content .work_wook_tab_text h2 {
+  text-align: start;
+  font-size: 3rem;
+}
+
+.work_wook_tabs_content .work_wook_tab_text p {
+  text-align: start;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+}
+
+.work_wook_tabs_content .work_wook_tab_text .btn_wrapper {
+  width: 60%;
+}
+
+.work_wook_tabs_content .work_wook_tab_text .btn_wrapper:hover {
+  width: 50%;
+}
+
+.work_wook_tabs_content .work_wook_tab_img {
+  transition: transform .6s ease;
+}
+
+.work_wook_tabs_content .work_wook_tab_img:hover {
+  transform: scale(1.04);
+}
+/*# sourceMappingURL=wook.css.map */

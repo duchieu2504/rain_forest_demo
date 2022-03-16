@@ -1,0 +1,90 @@
+.btn-best-sellers {
+  font-size: 1.5rem;
+  border: 1px solid #A76E65;
+  border-radius: 8px;
+}
+
+.btn-best-sellers.active {
+  background-color: #A76E65;
+  color: #fff;
+}
+
+.best_sellers_title {
+  margin-top: 40px;
+}
+
+.best_sellers_title h1 {
+  font-weight: 700;
+  font-size: 3.4rem;
+  text-align: center;
+}
+
+.best_sell_product_link:hover {
+  cursor: pointer;
+}
+
+.best_sell_product_link:hover p {
+  text-decoration: underline;
+}
+
+.best_sell_product_link:hover .best_sell_img {
+  display: none;
+}
+
+.best_sell_product_link:hover .best_sell_img_wrapper {
+  display: block;
+}
+
+.best_sell_product_info p {
+  font-size: 1.7rem;
+  line-height: 2.6rem;
+}
+
+.best_sell_img {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+
+.best_sell_img_wrapper {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+}
+
+.best_sell_product_price {
+  color: #F44032;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.best_sell_sale {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: 100;
+  color: #A76E65;
+}
+
+.best_sell_sale span {
+  font-size: 1.5rem;
+  color: #49B32F;
+}
+
+.btn_wrapper {
+  border-radius: 8px;
+  transition-property: width, transform;
+  transition-duration: .5s;
+  transition-timing-function: ease;
+  transform-origin: center;
+}
+
+.btn_wrapper:hover {
+  width: 90%;
+}
+
+.best_sell_product_item {
+  padding: 12px 0;
+}
+/*# sourceMappingURL=section2.css.map */

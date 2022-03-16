@@ -1,0 +1,54 @@
+.process_img {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.process_content h2 {
+  padding-bottom: 16px;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+.process_sessions {
+  padding: 0;
+}
+
+.process_sessions li {
+  position: relative;
+  padding-left: 30px;
+  margin-left: 10px;
+  border-left: 1px dashed #A76E65;
+}
+
+.process_sessions li h4 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.process_sessions li p {
+  font-size: 1.7rem;
+  line-height: 3rem;
+  padding-bottom: 20px;
+}
+
+.process_sessions li a {
+  color: #2D9CDB;
+  font-size: 1.7rem;
+  font-weight: normal;
+}
+
+.process_sessions li::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 0px;
+  left: -7px;
+  background-color: #A76E65;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=process.css.map */

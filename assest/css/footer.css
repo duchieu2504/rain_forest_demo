@@ -1,0 +1,48 @@
+footer h1 {
+  font-weight: normal;
+  font-size: 2.2rem;
+}
+
+footer p, footer li {
+  color: #69451c;
+  line-height: 2.8rem;
+  font-weight: normal;
+  font-size: 1.5rem;
+  padding-bottom: 4px;
+}
+
+footer li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+footer .footer_img p {
+  color: #466732;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+footer .footer_img span {
+  font-size: 4.8rem;
+  line-height: 6rem;
+  font-weight: 700;
+  color: #466732;
+}
+
+footer .footer_img a {
+  color: #466732;
+}
+
+footer .footer_cate_nav {
+  padding-top: 72px;
+}
+
+.footer_content {
+  border-bottom: 1px solid #E29856;
+}
+
+.footer_copyright_title {
+  font-size: 1.6rem;
+}
+/*# sourceMappingURL=footer.css.map */

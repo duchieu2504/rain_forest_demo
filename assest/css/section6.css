@@ -1,0 +1,67 @@
+.site-moto {
+  width: 50%;
+  margin: auto;
+}
+
+.site-moto > p {
+  font-size: 1.4rem;
+}
+
+.site-moto h2 {
+  color: #466732;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  text-align: center;
+}
+
+.site-moto-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-moto-title p {
+  font-size: 2rem;
+  line-height: 3.6rem;
+  font-weight: 700;
+  color: #466732;
+}
+
+.site-moto-title span {
+  font-size: 2rem;
+  color: #E29856;
+}
+
+.buttons_wrapper {
+  text-align: center;
+}
+
+.buttons_wrapper .btn_wrapper {
+  display: inline-block;
+  width: 210px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.buttons_wrapper .btn_wrapper:hover {
+  width: 200px;
+}
+
+.buttons_wrapper .btn_clean {
+  display: inline-block;
+  text-align: center;
+  color: #69451c;
+  width: 210px;
+  border: 1px solid #69451c;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 4.4rem;
+  transition-property: width, transform;
+  transform-origin: center;
+  transition-duration: .4s;
+  transition-timing-function: ease;
+}
+
+.buttons_wrapper .btn_clean:hover {
+  width: 200px;
+}
+/*# sourceMappingURL=section6.css.map */
