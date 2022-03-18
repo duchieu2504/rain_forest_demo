@@ -1,4 +1,4 @@
-@import 'base.scss';
+@import "base.scss";
 header {
     position: relative;
 
@@ -8,17 +8,18 @@ header {
 }
 #header {
     transition-property: position;
-    transition-duration: .6s;
+    transition-duration: 0.6s;
     transform-origin: top center;
     transition-timing-function: ease;
-    position: fixed;
-    top: 0;
-    z-index: 9999;
-    background: #fff;
-    left: 107px;
-    width: 1306px;
     &.active {
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, .05);
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+        padding: 0 100px;
+        background: #fff;
+        left: 0px;
+        width: 100%;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
         .site-header__logo-image-laptop {
             display: none;
         }
@@ -79,7 +80,7 @@ header {
 .navbar_link {
     line-height: 3rem;
     &:hover {
-        color: #412b11
+        color: #412b11;
     }
 }
 
@@ -100,7 +101,7 @@ header {
 
         width: 18px;
         height: 18px;
-        background-color: #EFD7C5;
+        background-color: #efd7c5;
         border-radius: 10px;
     }
     span {
@@ -127,11 +128,11 @@ header {
     line-height: 20px;
     text-align: center;
     .small-hide {
-       font-weight: 700;
+        font-weight: 700;
         display: block;
         padding: 0 6px;
-        background: #A76E65;
-        color: $white-color
+        background: #a76e65;
+        color: $white-color;
     }
     &.offers-1 {
         background: url("../images/offers/deal-stick.webp") right center no-repeat transparent;
@@ -164,18 +165,16 @@ header {
     background-size: cover;
 }
 
-
 // navbar_tabs_menu
 .navbar_tabs {
     position: absolute;
     top: 46px;
     left: -220px;
     width: 1320px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, .3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     z-index: 2;
     background-color: #fff;
     &_list {
-
     }
 
     &_item {
@@ -190,7 +189,7 @@ header {
             text-align: center;
             cursor: pointer;
             img {
-                transition: transform .6s ease;
+                transition: transform 0.6s ease;
             }
             p {
                 font-size: 2rem;
@@ -199,7 +198,7 @@ header {
             }
             &:hover {
                 img {
-                    transform: scale(1.09)
+                    transform: scale(1.09);
                 }
             }
         }
@@ -223,9 +222,9 @@ header {
                 text-align: center;
                 min-height: 102px;
                 color: #69451c;
-                padding: 12px 16px ;
+                padding: 12px 16px;
             }
-            .btn_navbar_abouts  {
+            .btn_navbar_abouts {
                 width: 50%;
                 display: flex;
                 align-items: center;
@@ -233,10 +232,10 @@ header {
                 justify-content: center;
                 border-radius: 7px;
                 border: none;
-                background: #A76E65;
+                background: #a76e65;
                 padding: 6px 8px;
                 transition-property: width;
-                transition-duration: .6s;
+                transition-duration: 0.6s;
                 transform-origin: center;
                 transition-timing-function: ease;
                 &:hover {
@@ -252,10 +251,9 @@ header {
     }
 
     &_menu {
-
         &_list {
             min-width: 300px;
-            border-right: 1px solid #A76E65;
+            border-right: 1px solid #a76e65;
         }
         &_title {
             a {
@@ -263,18 +261,18 @@ header {
                 padding: 10px 16px;
                 font-size: 1.6rem;
                 font-weight: 600;
-                color: #A76E65;
+                color: #a76e65;
                 background: #fff;
                 border-radius: 10px;
                 &:hover {
                     color: #fff;
-                    background: #A76E65;
+                    background: #a76e65;
                 }
             }
             &.active {
                 a {
                     color: #fff;
-                    background: #A76E65;
+                    background: #a76e65;
                 }
             }
         }
@@ -292,11 +290,11 @@ header {
                 cursor: pointer;
                 text-align: center;
                 img {
-                    transition: transform .6s ease;
+                    transition: transform 0.6s ease;
                 }
                 &:hover {
                     img {
-                        transform: scale(1.09)
+                        transform: scale(1.09);
                     }
                 }
             }
@@ -307,5 +305,4 @@ header {
             }
         }
     }
-
 }

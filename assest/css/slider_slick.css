@@ -1,11 +1,8 @@
-#slider {
-  margin-top: 182px;
-}
-
 .slider_slick {
+  position: relative;
   overflow: hidden;
   border-top-left-radius: 20px;
-  border-top-right-radius: 20px .slider_slick _list;
+  border-top-right-radius: 20px;
 }
 
 .slider_slick_item {
@@ -16,6 +13,31 @@
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.slider_slick_button {
+  position: absolute;
+  top: 50%;
+  width: 36px;
+  height: 36px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.slider_slick_button img {
+  padding: 6px 8px;
+}
+
+.slider_slick_button_prev {
+  left: 10px;
+}
+
+.slider_slick_button_next {
+  right: 10px;
 }
 
 .one-slider {

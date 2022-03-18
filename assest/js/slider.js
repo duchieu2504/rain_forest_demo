@@ -22,31 +22,72 @@ window.addEventListener('DOMContentLoaded', sliderHeader())
 
 
 // slider_slicks
-let index = 0 
+let index = 1 
+let autoTime = 5000;
 const sliderSlickList = document.querySelector('.slider_slick_list')
 const sliderSlickElement = document.querySelector('.slider_slick')
 const sliderSlickItem = document.querySelectorAll('.slider_slick_item')
+const btnSlideSlickNext = document.querySelector('.slider_slick_button_next')
+const btnSlideSlickPrev = document.querySelector('.slider_slick_button_prev')
 
 
-const getWidth = sliderSlickElement.clientWidth - 1
-const sliderSlick = () => {
-    sliderSlickList.style.width = `${sliderSlickItem.length * 100}%`
+const getWidth = sliderSlickElement.clientWidth
+sliderSlickList.style.width = `${sliderSlickItem.length * 100}%`
+sliderSlickList.style.transform = `translateX(-${getWidth}px)`
+
+const nextSlider = () => {
     index++;
-    
-    
-    if(index >= sliderSlickItem.length) index = 0
+    if(index >= sliderSlickItem.length) index = 1
     sliderSlickList.style.transition = `transform .6s linear`
     sliderSlickList.style.transform = `translateX(-${getWidth * index}px)`
-    setTimeout(sliderSlick, 3500);
 }
+
+const autoSliderSlick = () => {
+    console.log('auto', autoTime);
+    if(autoTime > 0) {
+        nextSlider()
+    }
+}
+
+btnSlideSlickNext.addEventListener('click', () => {
+    autoTime = 0
+    console.log('click next', autoTime);
+    nextSlider()
+})
+btnSlideSlickPrev.addEventListener('click', () => {
+    autoTime = 0
+    index--;
+    if(index < 0) return;
+    sliderSlickList.style.transition = `transform .6s linear`
+    sliderSlickList.style.transform = `translateX(-${getWidth * index}px)`
+})
 sliderSlickList.addEventListener('transitionend', () => {
+    autoTime = 5000
+    console.log('transitionend', autoTime);
     if(index === sliderSlickItem.length - 1) {
         sliderSlickList.style.transition = 'none'
-        index = 0;
+        index = 1;
+        sliderSlickList.style.transform = `translateX(-${getWidth * index}px)`
+    }
+    if(index === 0) {
+        sliderSlickList.style.transition = 'none'
+        index = sliderSlickItem.length - 2;
         sliderSlickList.style.transform = `translateX(-${getWidth * index}px)`
     }
 })
-window.addEventListener('DOMContentLoaded', sliderSlick())
+sliderSlickList.addEventListener('transitionstart', () => {
+    autoTime = 0
+    console.log('transitionstart time', autoTime);
+})
+sliderSlickList.addEventListener('transitionrun', () => {
+    autoTime = 0
+    console.log('transitionrun time', autoTime);
+})
+    // autoSliderSlick()
+window.addEventListener('DOMContentLoaded', () => {
+    const autoPlay = setInterval(autoSliderSlick, autoTime)
+    return () => clearInterval(autoPlay)
+})
 
 // slider_reviews
 let indexWrapepr = 0

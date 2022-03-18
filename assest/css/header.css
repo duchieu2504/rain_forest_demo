@@ -8,18 +8,19 @@ header img {
 
 #header {
   transition-property: position;
-  transition-duration: .6s;
+  transition-duration: 0.6s;
   transform-origin: top center;
   transition-timing-function: ease;
-  position: fixed;
-  top: 0;
-  z-index: 9999;
-  background: #fff;
-  left: 107px;
-  width: 1306px;
 }
 
 #header.active {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  padding: 0 100px;
+  background: #fff;
+  left: 0px;
+  width: 100%;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -116,7 +117,7 @@ header img {
   left: 20px;
   width: 18px;
   height: 18px;
-  background-color: #EFD7C5;
+  background-color: #efd7c5;
   border-radius: 10px;
 }
 
@@ -149,7 +150,7 @@ header img {
   font-weight: 700;
   display: block;
   padding: 0 6px;
-  background: #A76E65;
+  background: #a76e65;
   color: #fff;
 }
 
@@ -215,7 +216,7 @@ header img {
 }
 
 .navbar_tabs_item_wook img {
-  transition: transform .6s ease;
+  transition: transform 0.6s ease;
 }
 
 .navbar_tabs_item_wook p {
@@ -262,10 +263,10 @@ header img {
   justify-content: center;
   border-radius: 7px;
   border: none;
-  background: #A76E65;
+  background: #a76e65;
   padding: 6px 8px;
   transition-property: width;
-  transition-duration: .6s;
+  transition-duration: 0.6s;
   transform-origin: center;
   transition-timing-function: ease;
 }
@@ -282,7 +283,7 @@ header img {
 
 .navbar_tabs_menu_list {
   min-width: 300px;
-  border-right: 1px solid #A76E65;
+  border-right: 1px solid #a76e65;
 }
 
 .navbar_tabs_menu_title a {
@@ -290,19 +291,19 @@ header img {
   padding: 10px 16px;
   font-size: 1.6rem;
   font-weight: 600;
-  color: #A76E65;
+  color: #a76e65;
   background: #fff;
   border-radius: 10px;
 }
 
 .navbar_tabs_menu_title a:hover {
   color: #fff;
-  background: #A76E65;
+  background: #a76e65;
 }
 
 .navbar_tabs_menu_title.active a {
   color: #fff;
-  background: #A76E65;
+  background: #a76e65;
 }
 
 .navbar_tabs_menu_wrapper {
@@ -325,7 +326,7 @@ header img {
 }
 
 .navbar_tabs_menu_wrapper_item img {
-  transition: transform .6s ease;
+  transition: transform 0.6s ease;
 }
 
 .navbar_tabs_menu_wrapper_item:hover img {

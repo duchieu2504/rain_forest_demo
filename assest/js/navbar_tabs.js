@@ -36,7 +36,6 @@ const navbarsTabs = () => {
         // hover vào navbarItem Menu Title
         navbarTabsMenuTitleNews.forEach((item, k) => {
             item.addEventListener('mouseenter', (e) => {
-                console.log(e.target)
                 const classMenuWrapper = e.target.dataset.menu
 
                 // const navbasTabsMenuListWrapperActive = document.querySelector('.navbar_tabs_menu_wrapper_list.active')
